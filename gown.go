@@ -20,6 +20,8 @@ import (
 	"github.com/beego/i18n"
 
 	"gown/controllers"
+
+	"github.com/beego/admin" //admin 包
 )
 
 const (
@@ -27,6 +29,7 @@ const (
 )
 
 func main() {
+	admin.Run()
 	beego.Info(beego.BConfig.AppName, APP_VER)
 
 	// Register routers.
