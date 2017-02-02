@@ -1,26 +1,24 @@
-# Beego samples
+# Web IM
 
-[中文文档](README_ZH.md)
+[中文文档](./README_ZH.md)
 
-This is mainly for beego sample applications, you can either study how to use beego through this project, play around with it, open an issue to tell us what sample you expect, or even pull request with a sample.
+This sample is about using long polling and WebSocket to build a web-based chat room based on beego.
 
-Updated for beego v1.6
+- [Documentation](http://beego.me/docs/examples/chat.md)
 
 ## Installation
 
-Install [beego](http://beego.me/docs/install/)
-
-In github, Fork https://github.com/beego/samples
-
 ```
-# you should have set up your GOPATH by now
-cd $GOPATH/src
-# now clone your forked repo.
-git clone https://github.com/yourname/samples
+cd $GOPATH/src/samples/WebIm
+go get github.com/gorilla/websocket
+go get github.com/beego/i18n
+bee run
 ```
 
-## Samples
+## Usage
 
-- [WebIM](WebIM/README.md): Chat room demo based on long polling and WebSocket.
-- [ShortURL](shorturl/README.md): shouturl app based on beego. API applications
-- [Todo](todo/README.md): todo app based on beego.angularJS with API which is designed by beego.
+enter chat room from 
+
+```
+http://127.0.0.1:8080 
+```

@@ -21,7 +21,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/gorilla/websocket"
 
-	"samples/WebIM/models"
+	"gown/models"
 )
 
 // WebSocketController handles WebSocket requests.
